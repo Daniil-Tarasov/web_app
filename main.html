@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-
+<div class="row">
+    <div class="col-2" data-bs-theme="dark">
+        <div class="row card text-bg-dark p-3 mb-3" style="max-width: 100rem; height: 40rem;">
+            <div class="card-header">
+                <h1>В Меню</h1>
+            </div>
+            <div class="row card-body mb-5">
+                <button type="button" class="btn btn-dark" style="height: 3rem;">Главная</button>
+                <button type="button" class="btn btn-dark" style="height: 3rem;">Категории</button>
+                <button type="button" class="btn btn-dark" style="height: 3rem;">Заказы</button>
+                <button type="button" class="btn btn-dark" style="height: 3rem;">Контакты</button>
+                <div class="card-footer position-absolute bottom-0 start-0">
+                    <div class="dropup">
+                        <button type="button" class="btn btn-grey dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Пользователь
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Профиль</a></li>
+                            <li><a class="dropdown-item" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 mt-5">
+        <div class="row text-center">
+            <h1>Главная</h1>
+            <small class="text-body-secondary">
+                Вы находитесь на сайте, предназначенном для продажи товаров
+            </small>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 p-5 g-5 text-center">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><h4>Товар 1</h4></div>
+                    <div class="card-body">
+                        <h1 class="card-tittle">$ 100</h1>
+                        <p class="card-text">Описание продукта</p>
+                        <button type="button" class="btn btn-outline-primary w-100">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><h4>Товар 2</h4></div>
+                    <div class="card-body">
+                        <h1 class="card-tittle">$ 100</h1>
+                        <p class="card-text">Описание продукта</p>
+                        <button type="button" class="btn btn-outline-primary w-100">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header"><h4>Товар 3</h4></div>
+                    <div class="card-body">
+                        <h1 class="card-tittle">$ 100</h1>
+                        <p class="card-text">Описание продукта</p>
+                        <button type="button" class="btn btn-outline-primary w-100">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
 </body>
 </html>
